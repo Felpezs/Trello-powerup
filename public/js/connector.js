@@ -1,4 +1,4 @@
-windowTrelloPowerUp.initialize({
+TrelloPowerUp.initialize({
   "card-buttons": function (t, options) {
     return [
       {
