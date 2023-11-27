@@ -48,8 +48,8 @@ TrelloPowerUp.initialize({
     });
   },
   "authorization-status": (t, options) => {
-    return t.get("member", "private", "authToken").then((authToken) => {
-      authorized: authToken != null;
-    });
+    return t.get("member", "private", "authToken").then((authToken) => ({
+      authorized: authToken != null,
+    }));
   },
 });
