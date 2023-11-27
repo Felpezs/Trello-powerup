@@ -52,4 +52,12 @@ TrelloPowerUp.initialize({
       authorized: authToken != null,
     }));
   },
+
+  "show-authorization": (t, options) => {
+    return t.popup({
+      title: "Authorize 🥑 Account",
+      url: "../auth.html",
+      height: 140,
+    });
+  },
 });
